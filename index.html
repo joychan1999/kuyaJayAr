@@ -1,0 +1,250 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Kuya JayAr Exercises</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <!-- Exercise 2 -->
+                    <br>
+                    <h1>Exercise 2:</h1>
+                    <input type="checkbox" name="accept" class="accept" value="yes"> I accept the Terms and
+                    Condition<br>
+                    <input type="submit" value="Submit" class="btn btn-success submit-btn" disabled="disabled"
+                        name="submit">
+
+                    <br><br><br><br><br>
+                    <hr>
+
+                    <!-- Exercise 8 -->
+                    <br>
+                    <h1>Exercise 8:</h1>
+                    <input type="submit" value="Good Morning" class="btn btn-success change">
+
+                    <br><br><br><br><br>
+                    <hr>
+                    <!-- Exercise 10 -->
+                    <br>
+                    <h1>Exercise 10:</h1>
+                    <b>Input Amount: <input type="text" class="numbers"></b>
+
+                </div>
+                <div class="col-sm">
+                    <!-- Exercise 3 -->
+                    <br>
+                    <h1>Exercise 3:</h1>
+                    <table>
+                        <tbody>
+                            <tr class="colored">
+                                <th>Student</th>
+                                <th>Grade</th>
+                            </tr>
+                            <tr>
+                                <td>CJoy Ditchon</td>
+                                <td>1.0</td>
+                            </tr>
+                            <tr class="colored">
+                                <td>Jolly Borbon</td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>MAry Mae Pastidio</td>
+                                <td>1.2</td>
+                            </tr>
+                            <tr class="colored">
+                                <td>Marjory Mondido</td>
+                                <td>1.3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <hr>
+
+                    <!-- Exercise 9 -->
+                    <br>
+                    <h1>Exercise 9:</h1>
+                    <button class="btn btn-success changeColor">Change Alternate Color</button>
+                </div>
+                <div class="col-sm">
+
+                    <!-- Exercise 4 -->
+                    <br>
+                    <h1>Exercise 4 & 7:</h1>
+                    <input type="text" name="text-box" class="inputBox" maxlength="15">
+                    <p><span class="characterCount">15</span> Character(s) remaining.</p>
+
+                    <!-- Exercise 7 -->
+                    <div class="display"></div>
+                    <br><br><br>
+                    <hr>
+
+                    <!-- Exercise 5 -->
+                    <br>
+                    <h1>Exercise 5 & 6:</h1>
+                    <button class="btn btn-primary add-option">Add</button>
+                    <select name="dropdown" class="dropdown"></select>
+
+                    <!-- Exercise 6 -->
+                    <button class="btn btn-danger remove-option">Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 11 -->
+        <button class="btn btn-primary animate" id="animate">Animate</button><br><br>
+        <p class="content">jQuery</p>
+
+        <!-- Exercise 12 -->
+        <div>
+            <div>
+                <button class="btn btn-warning up" style="margin-left: 40px;">Up</button> <br><br>
+                <button class="btn btn-warning left">Left</button> &nbsp; &nbsp;
+                <button class="btn btn-warning right">Right</button><br><br>
+                <button class="btn btn-warning down" style="margin-left: 30px;">Down</button>
+            </div>
+            <div class="shape"></div>
+        </div>
+
+    </div>
+
+    <!-- Exercise 1 -->
+    <button type="button" class="btn btn-success bottom-top">Up</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+
+            // Ready document
+            $(document).ready(function () {
+
+                // Exercise 1
+                $('.bottom-top').on('click', function () {
+                    $('html body').scrollTop(0)
+                }) // End Exercise 1
+
+                // Exercise 2
+                $('.accept').on('click', function () {
+                    if ($('.submit-btn').is(':disabled')) {
+                        $('.submit-btn').removeAttr('disabled');
+                    } else {
+                        $('.submit-btn').attr('disabled', 'disabled');
+                    }
+                })
+
+                // Exercise 3
+                $('tr:even').addClass('colored');
+
+                // Excercise 4
+                var maxlength = 15;
+
+                $('.inputBox').on('keyup', function () {
+                    var textLength = maxlength - $(this).val().length;
+                    $('.characterCount').text(textLength);
+                })
+
+                // Exercise 5
+                $('.add-option').on('click', function () {
+                    var option = $('.inputBox').val();
+
+                    $('.dropdown').append('<option value="' + option + '">' + option + '</option>')
+                })
+
+                // Exercise 6
+                $('.remove-option').on('click', function () {
+                    var toRemove = $('.dropdown').val();
+
+                    $('.dropdown option[value="' + toRemove + '"]').remove();
+                })
+
+                // Exercise 7
+                $(".inputBox").on('keyup', function () {
+                    var toDisplay = $(this).val();
+
+                    $('.display').text(toDisplay);
+                })
+
+                // Exercise 8
+                $(".change").on('click', function () {
+                    if ($(".change").val() == "Good Morning") {
+                        $(".change").val("Good Evening");
+                    } else {
+                        $(".change").val("Good Morning");
+                    }
+                })
+
+                // Exercise 9
+                $('.changeColor').on('click', function () {
+                    $('tr:even').removeClass('colored').addClass('lightblue'); // you can use 'tr:odd' too
+                })
+
+                // Exercise 10
+                $('.numbers').keyup(function () {
+                    this.value = this.value.replace(/[^0-9\.]/g, '');
+                })
+
+
+
+                // // Exercise 11
+                $('#animate').click(function () {
+                    $(".content").animate({
+                        width: "100%",
+                        opacity: 0.4,
+                        fontSize: "50px",
+                        borderWidth: "10px"
+                    }, 1500);
+                })
+
+                // Exercise 12
+                $('.right').click(function () {
+                    $('.shape').animate({
+                        left: '+=100px'
+                    }, 'smooth');
+                })
+
+                $('.left').click(function () {
+                    $('.shape').animate({
+                        left: '-=100px'
+                    }, 'smooth');
+                })
+
+                $('.up').click(function () {
+                    $('.shape').animate({
+                        top: '-=100px'
+                    }, 'smooth');
+                })
+
+                $('.down').click(function () {
+                    $('.shape').animate({
+                        top: '+=100px'
+                    }, 'smooth');
+                }) 
+
+            }) 
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>
